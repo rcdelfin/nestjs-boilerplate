@@ -11,7 +11,7 @@ export class AuthController {
   constructor(
     private readonly authService: AuthService,
     private readonly userService: UsersService,
-  ) {}
+  ) { }
 
   @Post('login')
   @ApiResponse({ status: 201, description: 'Successful Login' })
